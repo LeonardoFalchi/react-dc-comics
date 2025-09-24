@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 
+/* BODY */
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* MyHeader */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 40px 20px 40px;
 }
 
 ul {
@@ -24,4 +31,19 @@ li {
 a {
     text-decoration: none;
     color: black;
+}
+
+/* MyMainContent */
+#main-section {
+    background-color: black;
+    color: white;
+}
+
+
+#icon-section {
+    background-color: #0382F9;
+}
+
+#icon-section img {
+    width: 50px;
 }
