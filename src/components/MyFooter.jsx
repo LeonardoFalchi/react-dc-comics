@@ -1,3 +1,10 @@
-export default function MyFooter() {
-    return (<footer> </footer>);
+// creo e esporto componente
+const MyFooter = () => {
+    return (
+        <footer>
+
+        </footer>
+    )
 }
+
+export default MyFooter

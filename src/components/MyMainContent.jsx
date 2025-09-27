@@ -4,10 +4,8 @@ import BuyComicsShop from '../assets/img/buy-comics-shop-locator.png';
 import BuyComicsSub from '../assets/img/buy-comics-subscriptions.png';
 import BuyDcVisa from '../assets/img/buy-dc-power-visa.svg';
 
-
-
-
-export default function MyMainContent() {
+// creo e esporto componente
+const MyMainContent = () => {
     return (
         <main>
             <section id="main-section">
@@ -37,5 +35,8 @@ export default function MyMainContent() {
 
             </section>
 
-        </main>);
+        </main>
+    )
 }
+
+export default MyMainContent

@@ -41,7 +41,15 @@ a {
 
 
 #icon-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: #0382F9;
+}
+
+#icon-section div {
+    display: flex;
+    align-items: center;
 }
 
 #icon-section img {
