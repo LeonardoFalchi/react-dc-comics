@@ -11,19 +11,20 @@ const Navbar = () => {
         { id: 8, text: 'FANS', url: '#', current: false },
         { id: 9, text: 'NEWS', url: '#', current: false },
         { id: 10, text: 'SHOP', url: '#', current: false },
-
     ]
+
+    const linkList = links.map(link => (
+        <li key={link.id}>
+            <a href={link.url} className={link.current ? "active" : ""}>
+                {link.text}
+            </a>
+        </li>
+    ));
 
     return (
         <nav>
             <ul>
-                {links.map(link => (
-                    <li key={link.id}>
-                        <a href={link.url} className={link.current ? "active" : ""}>
-                            {link.text}
-                        </a>
-                    </li>
-                ))}
+                {linkList}
             </ul>
         </nav>
     )
