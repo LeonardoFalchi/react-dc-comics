@@ -1,3 +1,4 @@
+import ComicsList from "./comics/ComicsList"
 import ShopContent from "./ShopContent"
 
 
@@ -5,13 +6,8 @@ import ShopContent from "./ShopContent"
 const MyMainContent = () => {
     return (
         <main>
-            <section id="main-section">
-                <h2>--&gt;Content goes here&lt;--</h2>
-            </section>
-
-
+            <ComicsList />
             <ShopContent />
-
         </main>
     )
 }
