@@ -6,6 +6,8 @@
 
 /* BODY */
 body {
+    height: 100%;
+    width: 100%;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -33,13 +35,37 @@ a {
     color: black;
 }
 
-/* MyMainContent */
-#main-section {
-    background-color: black;
-    color: white;
+/* JUMBOTRON */
+.jumbotron img {
+    width: 100%;
+}
+
+/* MYMAINCONTENT */
+
+/* ComicsList */
+#comics {
+    height: 800px;
+    padding-bottom: 1px;
+}
+
+.card-container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comic-card {
+    flex-basis: 20%;
+
+}
+
+img {
+    display: block;
 }
 
 
+
+/* ShopContent */
 #icon-section {
     display: flex;
     justify-content: space-around;
