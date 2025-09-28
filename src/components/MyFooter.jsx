@@ -1,3 +1,75 @@
+const dcComicsLinks = [
+    { label: "Characters", href: "#" },
+    { label: "Comics", href: "#" },
+    { label: "Movies", href: "#" },
+    { label: "TV", href: "#" },
+    { label: "Games", href: "#" },
+    { label: "Videos", href: "#" },
+    { label: "News", href: "#" },
+];
+
+const dcLinks = [
+    { label: "Terms Of Use", href: "#" },
+    { label: "Privacy policy", href: "#" },
+    { label: "Ad Choices", href: "#" },
+    { label: "Advertising", href: "#" },
+    { label: "Jobs", href: "#" },
+    { label: "Subscriptions", href: "#" },
+    { label: "Talent Workshops", href: "#" },
+    { label: "CPSC Certificates", href: "#" },
+    { label: "Ratings", href: "#" },
+    { label: "Shop Help", href: "#" },
+    { label: "Contact Us", href: "#" },
+];
+
+const sitesLinks = [
+    { label: "DC", href: "#" },
+    { label: "MAD Magazine", href: "#" },
+    { label: "DC Kids", href: "#" },
+    { label: "DC Universe", href: "#" },
+    { label: "DC Power Visa", href: "#" },
+];
+
+const shopLinks = [
+    { label: "Shop DC", href: "#" },
+    { label: "Shop DC Collectibles", href: "#" },
+];
+
+
+const dcComicsLink = dcComicsLinks.map((dcComicsLink, index) => (
+    <li key={"dccomics" + index}>
+        <a href={dcComicsLink.href}>
+            {dcComicsLink.label}
+        </a>
+    </li>
+));
+
+const dcLink = dcLinks.map((dcLink, index) => (
+    <li key={"dc" + index}>
+        <a href={dcLink.href}>
+            {dcLink.label}
+        </a>
+    </li>
+));
+
+const sitesLink = sitesLinks.map((sitesLink, index) => (
+    <li key={"sites" + index}>
+        <a href={sitesLink.href}>
+            {sitesLink.label}
+        </a>
+    </li>
+));
+
+const shopLink = shopLinks.map((shopLink, index) => (
+    <li key={"shop" + index}>
+        <a href={shopLink.href}>
+            {shopLink.label}
+        </a>
+    </li>
+));
+
+
+
 // creo e esporto componente
 const MyFooter = () => {
     return (
@@ -8,49 +80,28 @@ const MyFooter = () => {
                     <div className="footer-col">
                         <h4>DC COMICS</h4>
                         <ul>
-                            <li><a href="#">Characters</a></li>
-                            <li><a href="#">Comics</a></li>
-                            <li><a href="#">Movies</a></li>
-                            <li><a href="#">TV</a></li>
-                            <li><a href="#">Games</a></li>
-                            <li><a href="#">Videos</a></li>
-                            <li><a href="#">News</a></li>
+                            {dcComicsLink}
                         </ul>
                     </div>
 
                     <div className="footer-col">
                         <h4>DC</h4>
                         <ul>
-                            <li><a href="#">Terms Of Use</a></li>
-                            <li><a href="#">Privacy policy (New)</a></li>
-                            <li><a href="#">Ad Choices</a></li>
-                            <li><a href="#">Advertising</a></li>
-                            <li><a href="#">Jobs</a></li>
-                            <li><a href="#">Subscriptions</a></li>
-                            <li><a href="#">Talent Workshops</a></li>
-                            <li><a href="#">CPSC Certificates</a></li>
-                            <li><a href="#">Ratings</a></li>
-                            <li><a href="#">Shop Help</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            {dcLink}
                         </ul>
                     </div>
 
                     <div className="footer-col">
                         <h4>SITES</h4>
                         <ul>
-                            <li><a href="#">DC</a></li>
-                            <li><a href="#">MAD Magazine</a></li>
-                            <li><a href="#">DC Kids</a></li>
-                            <li><a href="#">DC Universe</a></li>
-                            <li><a href="#">DC Power Visa</a></li>
+                            {sitesLink}
                         </ul>
                     </div>
 
                     <div className="footer-col">
                         <h4>SHOP</h4>
                         <ul>
-                            <li><a href="#">Shop DC</a></li>
-                            <li><a href="#">Shop DC Collectibles</a></li>
+                            {shopLink}
                         </ul>
                     </div>
 
